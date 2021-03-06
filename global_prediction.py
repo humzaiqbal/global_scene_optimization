@@ -452,13 +452,6 @@ if __name__ == "__main__":
 	parser.add_argument("--data_directory", type=str, help = "Directory with data")
 	args = parser.parse_args()
 
-	with open('/Users/humzaiqbal/Downloads/data/tt0082089.pkl', 'rb') as f:
-		data = pickle.load(f)
-
-	baseline_test(data, 0.4)
-
-
-
 	total_mAP, total_Miou = 0, 0
 	counter = 0
 
